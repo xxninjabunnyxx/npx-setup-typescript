@@ -1,6 +1,6 @@
 {
-  "name": "npx-setup-typescript",
-  "version": "0.0.1",
+  "name": "@xxninjabunnyxx/npx-setup-typescript",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": "index.js",
