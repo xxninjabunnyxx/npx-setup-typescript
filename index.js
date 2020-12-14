@@ -6,7 +6,7 @@ const npm = require('npm')
 let pjson = JSON.parse(fs.readFileSync('./package.json'))
 
 pjson.scripts = {
-    setup: 'npm i -D @types/node typescript concurrently'
+    setup: 'npm i -D @types/node typescript concurrently nodemon'
 }
 fs.writeFileSync('./package.json', JSON.stringify(pjson, undefined, 2))
 
@@ -21,3 +21,4 @@ npm.load(() => {
     })
 })
 
+fs.copyFileSync(__dirname + '/tsconfig.json', './tsconfig.json')
