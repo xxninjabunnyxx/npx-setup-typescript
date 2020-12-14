@@ -22,3 +22,5 @@ npm.load(() => {
 })
 
 fs.copyFileSync(__dirname + '/tsconfig.json', './tsconfig.json')
+fs.mkdirSync('./src')
+fs.mkdirSync('./dist')
